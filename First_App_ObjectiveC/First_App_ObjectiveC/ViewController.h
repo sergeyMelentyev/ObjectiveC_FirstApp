@@ -8,10 +8,22 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+    NSTimer *timerDisplay;
+    NSTimer *dateDisplay;
+    int countInt;
+}
 
 @property (weak, nonatomic) IBOutlet UITextField *textField;
 @property (weak, nonatomic) IBOutlet UILabel *label;
+@property (weak, nonatomic) IBOutlet UILabel *nsTimerLabel;
+@property (weak, nonatomic) IBOutlet UILabel *nsTimeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *nsDateLabel;
+
 - (IBAction)DisplayText:(id)sender;
+- (IBAction)StartNSTimer:(id)sender;
+- (IBAction)fadeOutAnimation:(id)sender;
+-(void) customTimer;
+-(void) currentDate;
 
 @end
