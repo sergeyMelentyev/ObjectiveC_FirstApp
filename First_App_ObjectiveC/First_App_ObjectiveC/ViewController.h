@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 
-
+@property (weak, nonatomic) IBOutlet UITextField *textField;
+@property (weak, nonatomic) IBOutlet UILabel *label;
+- (IBAction)DisplayText:(id)sender;
 
 @end

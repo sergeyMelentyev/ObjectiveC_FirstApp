@@ -19,9 +19,7 @@
     
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    
+- (IBAction)DisplayText:(id)sender {
+    self.label.text = self.textField.text;
 }
-
 @end
