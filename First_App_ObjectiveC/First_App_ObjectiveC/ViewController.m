@@ -73,6 +73,17 @@
     [self.randomNumberLabel setText: [[NSString alloc] initWithFormat: @"%@", indexContent]];
 }
 
+// SWITCH AND BUTTONS
+- (IBAction)switchButtonAction:(id)sender {
+    if (self.switchButton.on) {
+        self.randomNimberBtnLabel.enabled = YES;
+    } else {
+        self.randomNimberBtnLabel.enabled = NO;
+    }
+}
+
+
+
 @end
 
 

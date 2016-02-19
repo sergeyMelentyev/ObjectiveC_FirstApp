@@ -20,11 +20,14 @@
 @property (weak, nonatomic) IBOutlet UILabel *nsTimeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *nsDateLabel;
 @property (weak, nonatomic) IBOutlet UILabel *randomNumberLabel;
+@property (weak, nonatomic) IBOutlet UISwitch *switchButton;
+@property (weak, nonatomic) IBOutlet UIButton *randomNimberBtnLabel;
 
 - (IBAction)DisplayText:(id)sender;
 - (IBAction)StartNSTimer:(id)sender;
 - (IBAction)fadeOutAnimation:(id)sender;
 - (IBAction)randomNumberBtn:(id)sender;
+- (IBAction)switchButtonAction:(id)sender;
 -(void) customTimer;
 -(void) currentDate;
 

@@ -115,6 +115,12 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZGU-Qv-jFu">
+                                <rect key="frame" x="20" y="267" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchButtonAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="3eZ-Dd-5ad"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -153,7 +159,9 @@
                         <outlet property="nsDateLabel" destination="Iqc-qF-t72" id="3Br-Ud-DH7"/>
                         <outlet property="nsTimeLabel" destination="WJl-5E-OHO" id="QqB-EE-qtW"/>
                         <outlet property="nsTimerLabel" destination="krX-EY-MZ1" id="yse-lK-Z0C"/>
+                        <outlet property="randomNimberBtnLabel" destination="SYb-d2-IOI" id="tV1-li-IqO"/>
                         <outlet property="randomNumberLabel" destination="cqA-Qp-NKD" id="rrW-KC-QvI"/>
+                        <outlet property="switchButton" destination="ZGU-Qv-jFu" id="zUn-pP-Htg"/>
                         <outlet property="textField" destination="WRv-ey-P4d" id="4Ct-rl-j4Y"/>
                     </connections>
                 </viewController>
