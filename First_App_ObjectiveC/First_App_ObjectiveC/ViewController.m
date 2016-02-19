@@ -63,6 +63,16 @@
     [UIView commitAnimations];
 }
 
+// RANDOM NUMBER FROM EXTERNAL SOURCE
+- (IBAction)randomNumberBtn:(id)sender {
+    NSString *fileName = [[NSBundle mainBundle] pathForResource: @"extArray" ofType: @"plist"];
+    NSDictionary *dictionaryCreate = [[NSDictionary alloc] initWithContentsOfFile: fileName];
+    NSMutableArray *itemInDictionary = [dictionaryCreate valueForKey: @"anyNameArray"];
+    int randomNumberGen = arc4random() % [itemInDictionary count];
+    NSString *indexContent = [itemInDictionary objectAtIndex: randomNumberGen];
+    [self.randomNumberLabel setText: [[NSString alloc] initWithFormat: @"%@", indexContent]];
+}
+
 @end
 
 

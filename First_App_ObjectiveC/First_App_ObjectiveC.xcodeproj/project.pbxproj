@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8066D3EB1C776A9C00028A32 /* extArray.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8066D3EA1C776A9C00028A32 /* extArray.plist */; };
 		80A055D01C50C6E400C38AAF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A055CF1C50C6E400C38AAF /* main.m */; };
 		80A055D31C50C6E400C38AAF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A055D21C50C6E400C38AAF /* AppDelegate.m */; };
 		80A055D61C50C6E400C38AAF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A055D51C50C6E400C38AAF /* ViewController.m */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8066D3EA1C776A9C00028A32 /* extArray.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = extArray.plist; sourceTree = "<group>"; };
 		80A055CB1C50C6E400C38AAF /* First_App_ObjectiveC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = First_App_ObjectiveC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80A055CF1C50C6E400C38AAF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		80A055D11C50C6E400C38AAF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				80A055D21C50C6E400C38AAF /* AppDelegate.m */,
 				80A055D41C50C6E400C38AAF /* ViewController.h */,
 				80A055D51C50C6E400C38AAF /* ViewController.m */,
+				8066D3EA1C776A9C00028A32 /* extArray.plist */,
 				80A055D71C50C6E400C38AAF /* Main.storyboard */,
 				80A055DD1C50C6E400C38AAF /* Assets.xcassets */,
 				80A055DF1C50C6E400C38AAF /* LaunchScreen.storyboard */,
@@ -255,6 +258,7 @@
 				80A055E11C50C6E400C38AAF /* LaunchScreen.storyboard in Resources */,
 				80A055DE1C50C6E400C38AAF /* Assets.xcassets in Resources */,
 				80A055D91C50C6E400C38AAF /* Main.storyboard in Resources */,
+				8066D3EB1C776A9C00028A32 /* extArray.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +516,7 @@
 				80A055FD1C50C6E400C38AAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		80A055FE1C50C6E400C38AAF /* Build configuration list for PBXNativeTarget "First_App_ObjectiveCTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +525,7 @@
 				80A056001C50C6E400C38AAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		80A056011C50C6E400C38AAF /* Build configuration list for PBXNativeTarget "First_App_ObjectiveCUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +534,7 @@
 				80A056031C50C6E400C38AAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

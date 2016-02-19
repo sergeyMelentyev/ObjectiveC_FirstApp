@@ -19,10 +19,12 @@
 @property (weak, nonatomic) IBOutlet UILabel *nsTimerLabel;
 @property (weak, nonatomic) IBOutlet UILabel *nsTimeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *nsDateLabel;
+@property (weak, nonatomic) IBOutlet UILabel *randomNumberLabel;
 
 - (IBAction)DisplayText:(id)sender;
 - (IBAction)StartNSTimer:(id)sender;
 - (IBAction)fadeOutAnimation:(id)sender;
+- (IBAction)randomNumberBtn:(id)sender;
 -(void) customTimer;
 -(void) currentDate;
 
