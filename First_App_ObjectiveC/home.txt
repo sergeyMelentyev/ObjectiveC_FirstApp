@@ -2,3 +2,9 @@
 -(IBAction) URLLinker: (id) sender {
   [[UIApplication sharedApplication] openURL: [NSURL URLWithString: @"http:www.apple.com"]];
 }
+
+// Delayed action call
+-(IBAction) DelayedAction: (id) sender {
+  [self performSelector: @selector(AnyName) withObject: nil afterDelay: 5.0];
+}
+
