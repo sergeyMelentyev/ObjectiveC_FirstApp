@@ -1,0 +1,4 @@
+// Open Safary and show a web page
+-(IBAction) URLLinker: (id) sender {
+  [[UIApplication sharedApplication] openURL: [NSURL URLWithString: @"http:www.apple.com"]];
+}
