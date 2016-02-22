@@ -8,3 +8,8 @@
   [self performSelector: @selector(AnyName) withObject: nil afterDelay: 5.0];
 }
 
+// Tag Sender
+-(IBAction) TagSenderAsArgument: (id) sender {
+  currentNumber = currentNumber * 10 + (float)[sender tag];
+  self.Label.text = [NSString stringWithFormat: @"2.0f", currentNumber];
+}
