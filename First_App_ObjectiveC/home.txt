@@ -8,7 +8,7 @@
   [self performSelector: @selector(AnyName) withObject: nil afterDelay: 5.0];
 }
 
-// Tag ID Sender from lots of buttons
+// Tag ID Sender from different buttons
 -(IBAction) TagSenderAsArgument: (id) sender {
   currentNumber = currentNumber * 10 + (float)[sender tag];
   self.Label.text = [NSString stringWithFormat: @"2.0f", currentNumber];
