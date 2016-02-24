@@ -4,7 +4,8 @@
 //
 //  Created by Melentyev on 21.01.16.
 //  Copyright © 2016 Melentyev. All rights reserved.
-//
+
+//  ALWAYS USE THREE SIZE IMG FORMAT (fileName@3x.png, fileName@2x.png, fileName.png)
 
 #import "ViewController.h"
 
