@@ -18,7 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    dateDisplay = [NSTimer scheduledTimerWithTimeInterval: 1.0 target: self selector: @selector(currentDate) userInfo: nil repeats: YES]; 
+    dateDisplay = [NSTimer scheduledTimerWithTimeInterval: 1.0 target: self selector: @selector(currentDate) userInfo: nil repeats: YES];
+    
+    // DISPLAY AN IMAGE FROM URL
+    self.imageFromUrl.image = [UIImage imageWithData: [NSData dataWithContentsOfURL: [NSURL URLWithString: @"https://upload.wikimedia.org/wikipedia/commons/e/e5/HTTPS_icon.png"]]];
 }
 
 // WORKING WITH TEXT AND LABELS
@@ -64,7 +67,7 @@
     [UIView commitAnimations];
 }
 
-// RANDOM NUMBER FROM EXTERNAL SOURCE
+// RANDOM NUMBER FROM EXTERNAL SOURCE PLIST
 - (IBAction)randomNumberBtn:(id)sender {
     NSString *fileName = [[NSBundle mainBundle] pathForResource: @"extArray" ofType: @"plist"];
     NSDictionary *dictionaryCreate = [[NSDictionary alloc] initWithContentsOfFile: fileName];
@@ -133,8 +136,14 @@
     self.label.text = [NSString stringWithFormat: @"%i", countInt];
 }
 
-
-
+// CUSTOM PRINT SCREEN
+- (IBAction)customPrintScreen:(id)sender {
+    UIGraphicsBeginImageContext(self.view.bounds.size);
+    [self.view.layer renderInContext: UIGraphicsGetCurrentContext()];
+    UIImage *screenShot = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    UIImageWriteToSavedPhotosAlbum(screenShot, nil, nil, nil);
+}
 
 @end
 

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "QuartzCore/QuartzCore.h"
 
 @interface ViewController : UIViewController {
     NSTimer *timerDisplay;
@@ -25,6 +26,7 @@
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segmentController;
 @property (weak, nonatomic) IBOutlet UILabel *segmentLabel;
 @property (weak, nonatomic) IBOutlet UISlider *sliderController;
+@property (weak, nonatomic) IBOutlet UIImageView *imageFromUrl;
 
 - (IBAction)DisplayText:(id)sender;
 - (IBAction)StartNSTimer:(id)sender;
@@ -33,6 +35,7 @@
 - (IBAction)switchButtonAction:(id)sender;
 - (IBAction)segmentButtons:(id)sender;
 - (IBAction)sliderButton:(id)sender;
+- (IBAction)customPrintScreen:(id)sender;
 -(void) customTimer;
 -(void) currentDate;
 
