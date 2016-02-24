@@ -113,6 +113,24 @@
     }
 }
 
+// OPEN SAFARY IN FULL SCREEN
+-(IBAction) URLLinker: (id) sender {
+    [[UIApplication sharedApplication] openURL: [NSURL URLWithString: @"http:www.apple.com"]];
+}
+
+// DELAYED ACTION CALL
+-(IBAction) DelayedAction: (id) sender {
+    [self performSelector: @selector(anySelectorName) withObject: nil afterDelay: 5.0];
+}
+-(void) anySelectorName {
+    
+}
+
+// TAG ID SENDER
+-(IBAction) TagSenderAsArgument: (id) sender {
+    countInt = countInt * 10 + (float)[sender tag];
+    self.label.text = [NSString stringWithFormat: @"%i", countInt];
+}
 
 
 
