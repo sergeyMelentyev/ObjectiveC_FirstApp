@@ -22,12 +22,17 @@
 @property (weak, nonatomic) IBOutlet UILabel *randomNumberLabel;
 @property (weak, nonatomic) IBOutlet UISwitch *switchButton;
 @property (weak, nonatomic) IBOutlet UIButton *randomNimberBtnLabel;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentController;
+@property (weak, nonatomic) IBOutlet UILabel *segmentLabel;
+@property (weak, nonatomic) IBOutlet UISlider *sliderController;
 
 - (IBAction)DisplayText:(id)sender;
 - (IBAction)StartNSTimer:(id)sender;
 - (IBAction)fadeOutAnimation:(id)sender;
 - (IBAction)randomNumberBtn:(id)sender;
 - (IBAction)switchButtonAction:(id)sender;
+- (IBAction)segmentButtons:(id)sender;
+- (IBAction)sliderButton:(id)sender;
 -(void) customTimer;
 -(void) currentDate;
 

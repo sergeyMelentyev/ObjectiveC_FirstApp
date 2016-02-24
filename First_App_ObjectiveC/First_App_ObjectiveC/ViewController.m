@@ -73,14 +73,47 @@
     [self.randomNumberLabel setText: [[NSString alloc] initWithFormat: @"%@", indexContent]];
 }
 
-// SWITCH AND BUTTONS
+// SWITCHES, BUTTONS
 - (IBAction)switchButtonAction:(id)sender {
     if (self.switchButton.on) {
         self.randomNimberBtnLabel.enabled = YES;
+        [self.segmentController setEnabled: YES forSegmentAtIndex: 1];
     } else {
         self.randomNimberBtnLabel.enabled = NO;
+        [self.segmentController setEnabled: NO forSegmentAtIndex: 1];
     }
 }
+
+// SEGMETS
+- (IBAction)segmentButtons:(id)sender {
+    switch (self.segmentController.selectedSegmentIndex) {
+        case 0:
+            self.segmentLabel.text = @"First segment selected";
+            break;
+        case 1:
+            self.segmentLabel.text = @"Second segment selected";
+            break;
+        case 2:
+            self.segmentLabel.text = @"Third segment selected";
+            break;
+        default:
+            break;
+    }
+}
+
+// SLIDERS
+- (IBAction)sliderButton:(id)sender {
+    [self.segmentLabel setFont: [UIFont fontWithName: @"Verdana" size: self.sliderController.value]];
+}
+
+// SHAKE GESTURES
+-(void) motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    if (event.subtype == UIEventSubtypeMotionShake) {
+        self.segmentLabel.text = @"The device was shaken";
+    }
+}
+
+
 
 
 
