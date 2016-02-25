@@ -7,6 +7,7 @@
 //
 
 #import "TableViewController.h"
+#import "TableViewCell.h"
 
 @interface TableViewController ()
 
@@ -17,11 +18,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
+    // Preserve selection between presentations
     // self.clearsSelectionOnViewWillAppear = NO;
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+    // Display an Edit button in the navigation bar for this view controller
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    Title = @[@"First Name", @"Second Name", @"Third Name", @"Fourth Name", @"Fifth Name"];
+    Description = @[@"New Place", @"New Place", @"New Place", @"New Place", @"New Place"];
+    Image = @[@"1.jpg", @"2.jpg", @"3.jpg", @"4.jpg", @"5.jpg"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -30,20 +35,23 @@
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+    return Title.count;
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
+    static NSString *CellIdentifier = @"Cell";
+    TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: CellIdentifier forIndexPath: indexPath];
+    int row = (int)[indexPath row];
+    cell.cellName.text = Title[row];
+    cell.cellPlace.text = Description[row];
+    cell.cellImage.image = [UIImage imageNamed: Image[row]];
     return cell;
 }
-*/
+ 
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {

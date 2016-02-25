@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TableViewCell : UITableViewCell
+@interface TableViewCell : UITableViewCell {
+    
+}
+@property (weak, nonatomic) IBOutlet UIImageView *cellImage;
+@property (weak, nonatomic) IBOutlet UILabel *cellName;
+@property (weak, nonatomic) IBOutlet UILabel *cellPlace;
+
 
 @end
