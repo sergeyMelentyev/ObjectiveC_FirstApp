@@ -18,6 +18,8 @@
 		80A055EC1C50C6E400C38AAF /* First_App_ObjectiveCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A055EB1C50C6E400C38AAF /* First_App_ObjectiveCTests.m */; };
 		80A055F71C50C6E400C38AAF /* First_App_ObjectiveCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A055F61C50C6E400C38AAF /* First_App_ObjectiveCUITests.m */; };
 		80A056051C50D05400C38AAF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80A056041C50D05400C38AAF /* Foundation.framework */; };
+		80D273C61C7EF59000AC93DC /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D273C51C7EF59000AC93DC /* TableViewController.m */; };
+		80D273C91C7EF5BD00AC93DC /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D273C81C7EF5BD00AC93DC /* TableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,10 @@
 		80A055F61C50C6E400C38AAF /* First_App_ObjectiveCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = First_App_ObjectiveCUITests.m; sourceTree = "<group>"; };
 		80A055F81C50C6E400C38AAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80A056041C50D05400C38AAF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		80D273C41C7EF59000AC93DC /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		80D273C51C7EF59000AC93DC /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		80D273C71C7EF5BD00AC93DC /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		80D273C81C7EF5BD00AC93DC /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,10 @@
 				80A055D51C50C6E400C38AAF /* ViewController.m */,
 				8066D3EA1C776A9C00028A32 /* extArray.plist */,
 				80A055D71C50C6E400C38AAF /* Main.storyboard */,
+				80D273C71C7EF5BD00AC93DC /* TableViewCell.h */,
+				80D273C81C7EF5BD00AC93DC /* TableViewCell.m */,
+				80D273C41C7EF59000AC93DC /* TableViewController.h */,
+				80D273C51C7EF59000AC93DC /* TableViewController.m */,
 				80A055DD1C50C6E400C38AAF /* Assets.xcassets */,
 				80A055DF1C50C6E400C38AAF /* LaunchScreen.storyboard */,
 				80A055E21C50C6E400C38AAF /* Info.plist */,
@@ -284,8 +294,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				80A055D61C50C6E400C38AAF /* ViewController.m in Sources */,
+				80D273C91C7EF5BD00AC93DC /* TableViewCell.m in Sources */,
 				80A055D31C50C6E400C38AAF /* AppDelegate.m in Sources */,
 				80A055DC1C50C6E400C38AAF /* First_App_ObjectiveC.xcdatamodeld in Sources */,
+				80D273C61C7EF59000AC93DC /* TableViewController.m in Sources */,
 				80A055D01C50C6E400C38AAF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
