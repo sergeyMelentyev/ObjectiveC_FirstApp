@@ -20,6 +20,7 @@
 		80A056051C50D05400C38AAF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80A056041C50D05400C38AAF /* Foundation.framework */; };
 		80D273C61C7EF59000AC93DC /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D273C51C7EF59000AC93DC /* TableViewController.m */; };
 		80D273C91C7EF5BD00AC93DC /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D273C81C7EF5BD00AC93DC /* TableViewCell.m */; };
+		80D273CC1C7EFD6C00AC93DC /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D273CB1C7EFD6C00AC93DC /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		80D273C51C7EF59000AC93DC /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		80D273C71C7EF5BD00AC93DC /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		80D273C81C7EF5BD00AC93DC /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		80D273CA1C7EFD6C00AC93DC /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		80D273CB1C7EFD6C00AC93DC /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,8 @@
 				80D273C81C7EF5BD00AC93DC /* TableViewCell.m */,
 				80D273C41C7EF59000AC93DC /* TableViewController.h */,
 				80D273C51C7EF59000AC93DC /* TableViewController.m */,
+				80D273CA1C7EFD6C00AC93DC /* DetailViewController.h */,
+				80D273CB1C7EFD6C00AC93DC /* DetailViewController.m */,
 				80A055D71C50C6E400C38AAF /* Main.storyboard */,
 				80A055DD1C50C6E400C38AAF /* Assets.xcassets */,
 				80A055DF1C50C6E400C38AAF /* LaunchScreen.storyboard */,
@@ -299,6 +304,7 @@
 				80A055DC1C50C6E400C38AAF /* First_App_ObjectiveC.xcdatamodeld in Sources */,
 				80D273C61C7EF59000AC93DC /* TableViewController.m in Sources */,
 				80A055D01C50C6E400C38AAF /* main.m in Sources */,
+				80D273CC1C7EFD6C00AC93DC /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
