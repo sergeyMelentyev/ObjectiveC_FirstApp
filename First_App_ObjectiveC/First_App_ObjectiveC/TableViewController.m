@@ -9,6 +9,7 @@
 #import "TableViewController.h"
 #import "TableViewCell.h"
 #import "DetailViewController.h"
+#import "tableViewHeader.h"
 
 @interface TableViewController ()
 
@@ -28,11 +29,13 @@
     Title = @[@"First Name", @"Second Name", @"Third Name", @"Fourth Name", @"Fifth Name"];
     Description = @[@"New Place", @"New Place", @"New Place", @"New Place", @"New Place"];
     Image = @[@"1.jpg", @"2.jpg", @"3.jpg", @"4.jpg", @"5.jpg"];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
     
+    UIBarButtonItem *NewButton = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target: nil action: nil];
+    [[self navigationItem] setBackBarButtonItem: NewButton];
+    
+    self.tableView.separatorColor = [UIColor colorWithRed:0/255.0 green:122/255.0 blue:255/255.0 alpha: 0.25];
+    
+    self.tableView.tableHeaderView = [[tableViewHeader alloc] initWithText:@"Sky Scrapers"];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

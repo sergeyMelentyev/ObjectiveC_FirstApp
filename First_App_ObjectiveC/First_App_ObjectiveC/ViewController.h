@@ -27,6 +27,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *segmentLabel;
 @property (weak, nonatomic) IBOutlet UISlider *sliderController;
 @property (weak, nonatomic) IBOutlet UIImageView *imageFromUrl;
+@property (weak, nonatomic) IBOutlet UITextField *textSaveData;
+@property (weak, nonatomic) IBOutlet UILabel *labelSaveData;
 
 - (IBAction)DisplayText:(id)sender;
 - (IBAction)StartNSTimer:(id)sender;
@@ -38,5 +40,16 @@
 - (IBAction)customPrintScreen:(id)sender;
 -(void) customTimer;
 -(void) currentDate;
+- (IBAction)saveButton:(id)sender;
+- (IBAction)loadButton:(id)sender;
+- (IBAction)dismissActionSaveData:(id)sender;
 
 @end
+
+
+
+
+
+
+
+

@@ -145,6 +145,23 @@
     UIImageWriteToSavedPhotosAlbum(screenShot, nil, nil, nil);
 }
 
+// SAVE DATA TO NSUSERDEFAULTS
+- (IBAction)saveButton:(id)sender {
+    NSString *savedString = self.labelSaveData.text;
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject: savedString forKey: @"savedString"];
+    [defaults synchronize];
+}
+- (IBAction)loadButton:(id)sender {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *loadString = [defaults objectForKey: @"savedString"];
+    [self.labelSaveData setText: loadString];
+}
+- (IBAction)dismissActionSaveData:(id)sender {
+    [self resignFirstResponder];
+    self.labelSaveData.text = self.textSaveData.text;
+}
+
 @end
 
 

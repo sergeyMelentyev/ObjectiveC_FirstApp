@@ -20,6 +20,8 @@
     self.nameDetailView.text = _DetailModal[0];
     self.placeDetailView.text = _DetailModal[1];
     self.imageDetailView.image = [UIImage imageNamed: _DetailModal[2]];
+    
+    self.navigationItem.title = _DetailModal[0];
 }
 
 @end
